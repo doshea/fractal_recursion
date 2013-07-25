@@ -1,5 +1,18 @@
+// Your Results:
+// Reload the page with the different scale ratios
+// given below. How many squares does each one create?
+//
+// 0.25 -> ???? squares
+// 0.30 -> ???? squares
+// 0.35 -> ???? squares
+// 0.40 -> ???? squares
+// 0.45 -> ???? squares
+// 0.50 -> ???? squares
+// 0.55 -> ???? squares
+// 0.60 -> ???? squares
+
 //STATIC GLOBAL VARIABLES
-var FRACTAL_SCALE=0.50;
+var FRACTAL_SCALE=0.3;
 var BASE_CASE_DIM = 1;
 
 //NON-STATIC GLOBAL VARIABLES
