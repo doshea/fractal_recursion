@@ -41,25 +41,13 @@ function recursive_square(left_x, top_y, dim){
     // halve the dimensions and
     var new_dim = dim*FRACTAL_SCALE;
 
+
     // call recursive square function again, with new dimension and same coordinates
+    recursive_square(left_x, top_y, new_dim);
 
     // call recursive square function again, with new dimension and coordinates of
     // right side (old left coordinate plus old dimension) minus new dimension and
     // bottom side (old top coordinate plus old dimension) minus new dimension
+    recursive_square(right_x-new_dim, bottom_y - new_dim, new_dim);
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
