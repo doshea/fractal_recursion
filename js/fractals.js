@@ -49,6 +49,6 @@ function recursive_square(left_x, top_y, dim){
     // call recursive square function again, with new dimension and coordinates of
     // right side (old left coordinate plus old dimension) minus new dimension and
     // bottom side (old top coordinate plus old dimension) minus new dimension
-    recursive_square(right_x-new_dim, bottom_y - new_dim, new_dim);
+    recursive_square(left_x + dim - new_dim, top_y + dim - new_dim, new_dim);
   }
 }
