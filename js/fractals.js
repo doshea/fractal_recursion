@@ -5,16 +5,7 @@ var BASE_CASE_DIM = 1;
 //NON-STATIC GLOBAL VARIABLES
 var ctx;
 
-$(function(){
-  // Find our canvas
-  var c = document.getElementById("fractal-canvas");
-  // Set its drawing context to two-dimensional
-  ctx=c.getContext("2d");
-  ctx.fillStyle="444444";
-
-  recursive_square(0, 0, 1024);
-});
-
+//FUNCTION DEFINITIONS
 function draw_line(x1, y1, x2, y2){
   ctx.moveTo(x1, y1);
   ctx.lineTo(x2, y2);
@@ -54,3 +45,15 @@ function recursive_square(left_x, top_y, dim){
     recursive_square(left_x + dim - new_dim, top_y + dim - new_dim, new_dim);
   }
 }
+
+// DOM READY EVENTS
+
+$(function(){
+  // Find our canvas
+  var c = document.getElementById("fractal-canvas");
+  // Set its drawing context to two-dimensional
+  ctx=c.getContext("2d");
+  ctx.fillStyle="444444";
+
+  recursive_square(0, 0, 1024);
+});
