@@ -33,7 +33,7 @@ function recursive_square(left_x, top_y, dim){
   draw_square(left_x, top_y, dim);
 
   // if our dimension was more than 1
-  if (dim >= BASE_CASE_DIM) {
+  if (dim > BASE_CASE_DIM) {
     // halve the dimensions and
     var new_dim = dim*FRACTAL_SCALE;
 
