@@ -31,6 +31,22 @@ function draw_square(left_x, top_y, dim){
   draw_line(left_x, top_y, left_x, bottom_y)
 }
 
+function recursive_square(left_x, top_y, dim){
+  // draw a square according to those dimenstions
+
+  // if our dimension was more than 1
+  // halve the dimensions and
+
+  // call recursive square function again, with new dimension and same coordinates
+
+  // call recursive square function again, with new dimension and coordinates of
+  // right side (old left coordinate plus old dimension) minus new dimension and
+  // bottom side (old top coordinate plus old dimension) minus new dimension
+
+
+
+
+}
 
 
 
