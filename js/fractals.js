@@ -4,6 +4,7 @@ var BASE_CASE_DIM = 1;
 
 //NON-STATIC GLOBAL VARIABLES
 var ctx;
+var square_counter = 0;
 
 //FUNCTION DEFINITIONS
 function draw_line(x1, y1, x2, y2){
@@ -13,6 +14,7 @@ function draw_line(x1, y1, x2, y2){
 }
 
 function draw_square(left_x, top_y, dim){
+  square_counter += 1;
   var right_x = left_x + dim;
   var bottom_y = top_y + dim;
 
