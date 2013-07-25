@@ -1,4 +1,5 @@
 //STATIC GLOBAL VARIABLES
+var FRACTAL_SCALE=0.50;
 
 //NON-STATIC GLOBAL VARIABLES
 var ctx;
@@ -38,6 +39,7 @@ function recursive_square(left_x, top_y, dim){
   // if our dimension was more than 1
   if (dim >= BASE_CASE_DIM) {
     // halve the dimensions and
+    var new_dim = dim*FRACTAL_SCALE;
 
     // call recursive square function again, with new dimension and same coordinates
 
