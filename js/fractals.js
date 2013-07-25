@@ -11,6 +11,8 @@ $(function(){
   // Set its drawing context to two-dimensional
   ctx=c.getContext("2d");
   ctx.fillStyle="444444";
+
+  recursive_square(0, 0, 1024);
 });
 
 function draw_line(x1, y1, x2, y2){
